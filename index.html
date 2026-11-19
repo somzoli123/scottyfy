@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scottyfy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scottyfy</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Scottyfy</h1>
-    <h2>Egy nagyon jó zene streamelő szolgáltatás</h2>
-    
+  <header><h1>Scottyfy</h1><p>Feel the music.</p></header>
+
+  <main>
+    <ul id="song-list"></ul>
+  </main>
+
+  <footer class="player">
+    <img id="cover" src="assets/images/cover-1.svg" alt="Borító">
+    <div>
+      <strong id="title">Válassz egy dalt</strong>
+      <span id="artist"></span>
+    </div>
+    <button id="prev">⏮</button>
+    <button id="play">▶</button>
+    <button id="next">⏭</button>
+    <input type="range" id="progress" min="0" max="100" value="0">
+    <input type="range" id="volume" min="0" max="100" value="70">
+  </footer>
+
+  <script src="js/app.js"></script>
 </body>
 </html>
